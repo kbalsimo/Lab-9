@@ -22,3 +22,6 @@ def encoder(password):
         num += 3
         output += str(num)
     return output
+
+if __name__ == "__main__":
+    main()

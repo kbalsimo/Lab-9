@@ -11,7 +11,16 @@ def main():
             print("The encoded password is "+encoded+", and the original password is", decoded+".\n")
         elif choice == "3":
             return False
-
+            
+def decoder(password):
+    decoding = []
+    output = ""
+    for num in password:
+        decoding.append(int(num))
+    for num in decoding:
+        num -= 3
+        output += str(num)
+    return output
 
 def encoder(password):
     encoding = []

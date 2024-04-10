@@ -5,10 +5,10 @@ def main():
         if choice == "1":
             passcode = input("Please enter your password to encode: ")
             encoded = encoder(passcode)
-            print("Your password has been encoded and stored!")
+            print("Your password has been encoded and stored!\n")
         elif choice == "2":
-            passcode = input("Please enter your password to decode: ")
-            pass
+            decoded = decoder(encoded)
+            print("The encoded password is "+encoded+", and the original password is", decoded+".\n")
         elif choice == "3":
             return False
 

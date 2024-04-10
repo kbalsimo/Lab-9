@@ -15,7 +15,7 @@ def main():
 
 def encoder(password):
     encoding = []
-    output = " "
+    output = ""
     for num in password:
         encoding.append(int(num))
     for num in encoding:
